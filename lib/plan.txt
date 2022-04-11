@@ -1,0 +1,51 @@
+Requirements 
+1. Create Account
+2. Log in
+3. Sign up
+4. Display not finished to-dos
+5. Keep list signed up w/ firebase
+6. If no todo say "no unfinished todos"
+7. Add a todo
+8. Check off todo
+
+Design
+sign in screen
+    log in screen
+        username, password, login, register
+
+home screen
+    app bard
+        sign out button
+    add todo
+
+    List todo
+
+main
+authentication
+    not recieved
+        loading screen
+    error
+        error
+    no authentication
+        login screen
+            username 
+            password
+            login button
+            register button
+    logged in
+        home screen
+            sign out button
+            add todo
+            list of todos
+
+
+rules
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

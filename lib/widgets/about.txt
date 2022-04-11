@@ -1,0 +1,3 @@
+todo card
+
+makes all todos look the same

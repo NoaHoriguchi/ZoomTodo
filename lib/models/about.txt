@@ -1,0 +1,4 @@
+to do model
+
+bits of data that go together
+data that is in every todo
